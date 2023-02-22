@@ -1,18 +1,20 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Button from "./components/Button";
-import NrInput from "./components/NrInput";
-import PinInput from "./components/PinInput";
-import ContentContainer from "./components/ContentContainer";
+import { Routes, Route } from "react-router-dom";
+import PreLander from "./pages/PreLander";
+import Mission from "./pages/Mission";
+import ThankYou from "./pages/ThankYou";
+import Pin from "./pages/Pin";
 
 function App() {
   return (
-    <div className="App">
-      <ContentContainer>
-        <Button label="Click me" />
-        <NrInput />
-        <PinInput />
-      </ContentContainer>
+    <div className="app">
+      <Routes>
+        <Route path="/" element={<PreLander />} />
+        <Route path="/mission/:name" element={<Mission />} />
+        <Route path="/pin" element={<Pin />} />
+        <Route path="/thank-you" element={<ThankYou />} />
+      </Routes>
     </div>
   );
 }

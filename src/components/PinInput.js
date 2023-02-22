@@ -1,4 +1,5 @@
 import React from "react";
+import "./PinInput.css";
 
 export default function PinInput() {
   return (

@@ -1,4 +1,5 @@
 import React from "react";
+import "./NrInput.css";
 
 export default function NrInput() {
   return (

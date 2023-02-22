@@ -1,0 +1,12 @@
+.pin-input{
+    width: 48px;
+    height:48px;
+    border: 1px sollid #707070 ;
+    border-radius: 4px;
+    background-color: white;
+    text-align: center;
+    font-size: 18px;
+    font-weight:400;
+    font-family: 'Roboto', sans-serif;
+  }
+  

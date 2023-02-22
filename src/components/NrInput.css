@@ -1,0 +1,13 @@
+.number-input{
+    width: 264px;
+    height:44px;
+    border: 1px sollid #707070 ;
+    border-radius: 32px;
+    background-color: #eaeaea;
+    text-align: start;
+    font-size: 18px;
+    font-weight:400;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 8px;
+  }
+  
