@@ -1,5 +1,4 @@
-.input-container {
-    display: flex;
-    flex-direction: row;
-    gap: 16px;
+.enter-pin {
+    margin-top: 8px;
+    margin-bottom: 8px;
 }

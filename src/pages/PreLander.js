@@ -1,20 +1,16 @@
 import React from "react";
 import Button from "../components/Button";
 import ContentContainer from "../components/ContentContainer";
+import InfoText from "../components/InfoText";
 import "./PreLander.css";
-// import { useHistory } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 export default function PreLander() {
-  // const history = useHistory();
-
-  // const handleClick = (lable) => {
-  //   history.push(`/mission/:${lable}`);
-  // };
+  const navigate = useNavigate();
 
   return (
     <div>
-      <img src="./cute_monster6.png" alt="monster_pic"></img>
-      <ContentContainer>
+      <ContentContainer imageURL={"./cute_monster6.png"}>
         <h2 className="title">
           Express your self with <br />
           <span className="bold">New</span>{" "}
@@ -22,10 +18,16 @@ export default function PreLander() {
         </h2>
         <p className="choose-text font-md">choose your sticker type</p>
         <div className="buttons-container">
-          <Button label="Funny" />
-          <Button label="Romance" />
+          <Link to="/mission/funny">
+            <Button label="Funny" />
+          </Link>
+          <Link to="/mission/romance">
+            <Button label="Romance" />
+          </Link>
         </div>
       </ContentContainer>
+      <img src="/MORE.png" alt=""></img>
+      <InfoText />
     </div>
   );
 }

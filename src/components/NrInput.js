@@ -11,6 +11,7 @@ export default function NrInput({ phoneNr, setPhoneNr, onSubmit }) {
           type="tel"
           name="phone"
           value={phoneNr}
+          patter="[0-9]{10}"
           onChange={(e) => {
             setPhoneNr(e.target.value);
           }}
