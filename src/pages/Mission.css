@@ -1,24 +1,15 @@
 .title {
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 500;
     text-align: center;
 }
 
-.bold {
-    font-weight: 900;
-}
-
-.highlight {
-    color: #59bba6;
-    font-weight: 900;
-}
-
-.choose-text {
+.enter-nr {
     margin-top: 8px;
     margin-bottom: 8px;
 }
 
-.buttons-container {
+.input-container {
     display: flex;
     flex-direction: column;
     gap: 8px;
