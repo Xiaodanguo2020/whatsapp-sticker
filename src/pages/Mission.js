@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "../components/Button";
 import NrInput from "../components/NrInput";
 import ContentContainer from "../components/ContentContainer";
 import "./Mission.css";
@@ -41,14 +40,3 @@ export default function Mission() {
     </div>
   );
 }
-
-// export const fetchArtwork = () => async (dispatch, getState) => {
-//   try {
-//     dispatch(startLoading());
-//     const response = await axios.get(`${apiUrl}/artworks`);
-//     // console.log("artworks data", response);
-//     dispatch(artworkFetched(response.data));
-//   } catch (e) {
-//     console.log(e.message);
-//   }
-// };

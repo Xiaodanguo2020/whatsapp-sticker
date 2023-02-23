@@ -1,50 +1,27 @@
 import React from "react";
 import "./PinInput.css";
+import Button from "./Button";
 
-export default function PinInput() {
+export default function PinInput({ pin, setPin, handleSubmit }) {
   return (
     <div>
-      <input
-        className="pin-input"
-        type="text"
-        id="pin1"
-        name="pin1"
-        inputMode="numeric"
-        pattern="[0-9]"
-        maxLength="1"
-        required
-      />
-
-      <input
-        className="pin-input"
-        type="text"
-        id="pin2"
-        name="pin2"
-        inputMode="numeric"
-        pattern="[0-9]"
-        maxLength="1"
-        required
-      />
-      <input
-        className="pin-input"
-        type="text"
-        id="pin3"
-        name="pin3"
-        inputMode="numeric"
-        pattern="[0-9]"
-        maxLength="1"
-        required
-      />
-      <input
-        className="pin-input"
-        type="text"
-        id="pin4"
-        name="pin4"
-        inputMode="numeric"
-        pattern="[0-9]"
-        maxLength="1"
-        required
-      />
+      <form onSubmit={handleSubmit} className="form-container">
+        <div className="input-container">
+          {pin?.map((value, index) => {
+            return (
+              <input
+                className="pin-input"
+                type="text"
+                key={index}
+                value={value}
+                maxLength={1}
+                onChange={(e) => setPin(e.target.value)}
+              />
+            );
+          })}
+        </div>
+        <Button type="Sumbit" label="Confirm" />
+      </form>
     </div>
   );
 }
