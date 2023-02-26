@@ -6,6 +6,7 @@ import "./Mission.css";
 import { useState } from "react";
 import axios from "axios";
 import { useParams, useNavigate } from "react-router-dom";
+import Testmonial from "../components/Testmonial";
 
 export default function Mission() {
   const { name } = useParams();
@@ -63,6 +64,12 @@ export default function Mission() {
         </p>
       </ContentContainer>
       <img src="/MORE.png" alt=""></img>
+      <Testmonial
+        text="It's good. There are many cool stickers!"
+        rating={4}
+        author="Fikri Aziz"
+        avatarURL="/avatar_img.png"
+      />
       <InfoText />
     </div>
   );

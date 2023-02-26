@@ -1,5 +1,5 @@
 .text-container{
-    width: 280px;
+    width: 304px;
     align-items: center;
     margin-top:16px;
     margin-bottom: 24px;
@@ -9,7 +9,7 @@
 .info-text{
     color:white;
     font-size: 10px;
-    font-weight: 400px;
+    font-weight: 400;
   
     text-align: center;
 }

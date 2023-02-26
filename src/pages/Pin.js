@@ -6,6 +6,7 @@ import ContentContainer from "../components/ContentContainer";
 import InfoText from "../components/InfoText";
 import axios from "axios";
 import "./Pin.css";
+import Testmonial from "../components/Testmonial";
 
 export default function Pin() {
   const [pin, setPin] = useState(["", "", "", ""]);
@@ -36,7 +37,7 @@ export default function Pin() {
 
   return (
     <div>
-      <ContentContainer imageURL={"./cute_monster6.png"}>
+      <ContentContainer imageURL={"./cute_monster6.png"} imgBehind={true}>
         <h2 className="title">The sticker packs is ready!</h2>
         <p className="margin-vertical font-md">
           We have send you a 4 digit code <br /> please enter below to confirm
@@ -50,6 +51,12 @@ export default function Pin() {
         </p>
       </ContentContainer>
       <img src="/MORE.png" alt=""></img>
+      <Testmonial
+        text="It's good. There are many cool stickers!"
+        rating={4}
+        author="Fikri Aziz"
+        avatarURL="avatar_img.png"
+      />
       <InfoText />
     </div>
   );

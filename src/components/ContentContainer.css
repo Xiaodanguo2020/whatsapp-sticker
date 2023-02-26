@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 299px;
+    width: 304px;
     height: 300px;
     padding: 0 20px;
     background-color: white;
@@ -14,7 +14,8 @@
 .img-monster{
     position:absolute;
     top: -80px;
+}
 
-
-
+.img-behind {
+    z-index: -1;
 }

@@ -9,7 +9,7 @@ import "./PreLander.css";
 export default function PreLander() {
   return (
     <div>
-      <ContentContainer imageURL={"./cute_monster6.png"}>
+      <ContentContainer imageURL={"/cute_monster5.png"}>
         <h2 className="title">
           Express your self with <br />
           <span className="bold">New</span>{" "}
