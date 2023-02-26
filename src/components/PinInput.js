@@ -1,4 +1,3 @@
-import React from "react";
 import "./PinInput.css";
 import Button from "./Button";
 

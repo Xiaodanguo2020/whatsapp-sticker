@@ -1,0 +1,26 @@
+.testmonial-container {
+    color: #FFFFFF;
+    background: #319379;
+    display:flex;
+    padding: 12px;
+    padding-left: 16px;
+    filter: drop-shadow(0px 3px 3px rgba(0,0,0,0.16 ));
+}
+.avatar-image {
+    /* width: 48px;
+    height: 48px; */
+    /* object-fit: contain; */
+    /* border: 4px solid white; */
+    /* border-radius: 100%; */
+    margin-right: 16px;
+}
+.testimonial-text {
+    margin-bottom: 4px;
+
+    
+}
+
+.author-name {
+    font-size: 16px;
+    margin-top: 8px;
+}

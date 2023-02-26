@@ -1,13 +1,12 @@
-import React from "react";
+import { Link } from "react-router-dom";
 import Button from "../components/Button";
 import ContentContainer from "../components/ContentContainer";
 import InfoText from "../components/InfoText";
+import Testmonial from "../components/Testmonial";
+
 import "./PreLander.css";
-import { useNavigate, Link } from "react-router-dom";
 
 export default function PreLander() {
-  const navigate = useNavigate();
-
   return (
     <div>
       <ContentContainer imageURL={"./cute_monster6.png"}>
@@ -27,6 +26,12 @@ export default function PreLander() {
         </div>
       </ContentContainer>
       <img src="/MORE.png" alt=""></img>
+      <Testmonial
+        text="It's good. There are many cool stickers!"
+        rating={4}
+        author="Fikri Aziz"
+        avatarURL="avatar_img.png"
+      />
       <InfoText />
     </div>
   );
